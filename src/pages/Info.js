@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { BsInstagram, BsTwitter, BsYoutube, BsVimeo } from 'react-icons/bs'
 import { FaSoundcloud } from 'react-icons/fa'
 import { GoMail } from 'react-icons/go'
@@ -21,34 +20,34 @@ const InfoPage = () => {
 
 				<ul className="social_links">
 					<li>
-						<Link to="https://www.instagram.com/cargoworld/" className="link" target="_blank">
+						<a href="https://www.instagram.com/cargoworld/" className="link" target="_blank" rel="noreferrer">
 							<BsInstagram className="icon" />
-						</Link>
+						</a>
 					</li>
 					<li>
-						<Link to="https://twitter.com/cargocollective" className="link" target="_blank">
+						<a href="https://twitter.com/cargocollective" className="link" target="_blank" rel="noreferrer">
 							<BsTwitter className="icon" />
-						</Link>
+						</a>
 					</li>
 					<li>
-						<Link to="https://www.youtube.com/" className="link" target="_blank">
+						<a href="https://www.youtube.com/" className="link" target="_blank" rel="noreferrer">
 							<BsYoutube className="icon" />
-						</Link>
+						</a>
 					</li>
 					<li>
-						<Link to="https://soundcloud.com/cargocollective" target="_blank" className="link">
+						<a href="https://soundcloud.com/cargocollective" target="_blank" rel="noreferrer" className="link">
 							<FaSoundcloud className="icon" />
-						</Link>
+						</a>
 					</li>
 					<li>
-						<Link to="https://vimeo.com/" target="_blank" className="link">
+						<a href="https://vimeo.com/" target="_blank" rel="noreferrer" className="link">
 							<BsVimeo className="icon" />
-						</Link>
+						</a>
 					</li>
 					<li>
-						<Link to="mailto:theericshawn12@gmail.com" target="_blank" className="link">
+						<a href="mailto:theericshawn12@gmail.com" target="_blank" rel="noreferrer" className="link">
 							<GoMail className="icon" />
-						</Link>
+						</a>
 					</li>
 				</ul>
 			</div>
