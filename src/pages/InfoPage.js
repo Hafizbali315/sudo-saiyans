@@ -7,7 +7,7 @@ import InfoBackgroundVideo from '../assets/InfoBackgroundVideo.mp4'
 const InfoPage = () => {
 	return (
 		<div className="info_page">
-			<video className="background_video" autoPlay muted loop id="background_video" controls="nodownload">
+			<video className="background_video" autoPlay muted loop id="background_video" controls={false}>
 				<source src={InfoBackgroundVideo} type="video/mp4" />
 			</video>
 

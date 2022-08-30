@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Layout from './components/Layout'
-import HomePage from './pages/Home'
-import InfoPage from './pages/Info'
+import HomePage from './pages/HomePage'
+import InfoPage from './pages/InfoPage'
+import MoodsPage from './pages/MoodsPage'
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 					<Route path="" element={<Layout />}>
 						<Route index element={<HomePage />} />
 						<Route path="/info" element={<InfoPage />} />
+						<Route path="/Moods" element={<MoodsPage />} />
 					</Route>
 				</Routes>
 			</Router>
