@@ -83,6 +83,53 @@ const HomePage = () => {
 						</Link>
 					</Draggable>
 				</div>
+
+				<div className="sm_screen">
+					<div className="row">
+						<Link to="/info">
+							<div className="info">
+								<img src={InfoIcon} alt="" />
+								<h6>Info</h6>
+							</div>
+						</Link>
+
+						<Link to="/Moods">
+							<div className="about">
+								<img src={AboutIcon} alt="" />
+								<h6>About.txt</h6>
+							</div>
+						</Link>
+
+						<Link to="private-folder">
+							<div className="folder">
+								<img src={FolderIcon} alt="" />
+								<h6>Project 1 (Private) </h6>
+							</div>
+						</Link>
+
+						<div className="telegram" onClick={() => getImg(Telegram)}>
+							<img src={Telegram} alt="" />
+							<h6>Telegram.exe</h6>
+						</div>
+					</div>
+
+					<div className="row">
+						<div className="mint">
+							<img src={MintIcon} alt="" />
+							<h6>mint.exe</h6>
+						</div>
+
+						<div className="experiments" onClick={() => getImg(Pc)}>
+							<img src={Pc} alt="" />
+							<h6>Experiments</h6>
+						</div>
+
+						<div className="logo" onClick={() => getImg(SudoSaiyans)}>
+							<img src={SudoSaiyans} alt="SudoSaiyans" />
+							<h6>logo.jpg</h6>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div className={imgModal ? 'modal open' : 'modal'} onClick={() => setImgModal(false)}>
