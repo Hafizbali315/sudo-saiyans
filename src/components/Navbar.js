@@ -69,9 +69,9 @@ const Navbar = () => {
 
 			<ul className="right">
 				<li>
-					<Link to="https://twitter.com/cargocollective" target="_blank">
+					<a href="https://twitter.com/cargocollective" rel="noreferrer" target="_blank">
 						<BsTwitter className="icon" />
-					</Link>
+					</a>
 				</li>
 				<li>
 					<div className="text">{time}</div>
